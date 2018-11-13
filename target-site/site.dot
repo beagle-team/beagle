@@ -1,0 +1,27 @@
+digraph htmljs {
+    a;
+    b;
+    c;
+    d;
+    e;
+    f;
+    xss;
+
+    -> a;
+
+    a -> b;
+    a -> d;
+    a -> e;
+    
+    b -> a;
+    b -> xss;
+    b -> f;
+    
+    d -> d;
+    d -> e;
+
+    e -> b;
+    e -> xss;
+
+    f -> c;
+}

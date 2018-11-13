@@ -1,0 +1,15 @@
+digraph htmljs {
+    rankdir="LR";
+    node [shape="box"];
+
+    entry[ shape="doublecircle" ];
+    form[xlabel=2];
+    target[xlabel=1, peripheries=2];
+
+    entry -> form;
+
+    form -> form;
+
+    form -> target;
+
+}
